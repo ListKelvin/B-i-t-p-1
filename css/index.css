@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat";
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  padding: 20px 0;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav li {
+  margin: 0 20px;
+  overflow: hidden;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+header .logo h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 50px;
+  color: #fff;
+}
+
+header nav button {
+  padding: 11px 30px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 17px;
+  transition: all 0.2s;
+}
+
+header li:hover a::after {
+  width: 100%;
+}
+
+header li:hover a::before {
+  width: 100%;
+  transform: translateX(0%);
+}
+
+header li a::before {
+  content: "";
+  height: 2.3px;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  transition: all 0.3s;
+  margin-top: 0.7px;
+  transform: translateX(100%);
+}
+
+header li a::after {
+  content: "";
+  height: 2.3px;
+  background-color: #fff;
+  display: block;
+  width: 0;
+  transition: all 0.3s;
+  margin-top: 0.7px;
+}
+
+.line {
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  transition: all 0.5s;
+}
+
+header nav button:hover {
+  background-color: #fff;
+  color: #000;
+  transform: translateY(-3px);
+}
+
+.bar {
+  height: fit-content;
+  display: none;
+}
+
+.bar i {
+  color: #333;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.nav-phone {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #000;
+  color: #fff;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+/* coding convention */
+/* SASS/SCSS: CSS Preporcessor */
+/* 
+  CSS Preporcessor: bộ tiền xử lý CSS
+  Nguyên tắc BEM
+*/
+
+/* responsive */
+@media only screen and (max-width: 1000px) {
+  nav {
+    display: none !important;
+  }
+  header {
+    background-color: #fff;
+    position: unset;
+    padding: 10px 0;
+  }
+  .bar {
+    display: block;
+  }
+
+  header .logo h1 {
+    color: #333 !important;
+  }
+  .nav-phone ul li {
+    list-style: none;
+  }
+  .nav-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1000;
+    margin: -50px 0px 0px;
+    height: 100%;
+    flex-direction: row;
+  }
+}

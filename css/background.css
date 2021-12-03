@@ -1,0 +1,319 @@
+/* background */
+.background {
+  height: 100vh;
+  background-position: right center;
+  background-size: cover;
+  position: relative;
+  background-image: url(../Image/50.jpg);
+}
+
+.background .wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background__content {
+  background-color: transparent;
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+  color: white;
+}
+
+.background__content > * {
+  width: 700px;
+}
+
+.background__content__name {
+  font-size: 30px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+}
+
+.background__content__skill ul {
+  list-style: none;
+  height: 80px;
+  overflow: hidden;
+}
+
+.background__content__skill ul li {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 80px;
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.background__content__from {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.background__content__button {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.background__content__button a {
+  margin: 0 15px;
+  border: 2px solid #fff;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 23px;
+  border-radius: 50px;
+  width: 63px;
+  height: 63px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.background__content__button a i {
+  margin-right: 22px;
+}
+
+.background__content__button a:hover {
+  width: 250px;
+  background-color: #fff;
+  color: #15a2fa;
+  border-color: #15a2fa;
+}
+
+.background__content__button a span {
+  min-width: 200px;
+  display: block;
+}
+
+.background__content__button a:nth-child(2):hover {
+  width: 400px;
+}
+
+.background__content__button a:nth-child(2) {
+  width: 65px;
+  height: 65px;
+}
+
+.background__content__button a:last-child:hover {
+  width: 250px;
+}
+
+.background__content__button a:last-child {
+  width: 65px;
+  height: 65px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  z-index: 999;
+}
+
+@-webkit-keyframes slide {
+  25% {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  50% {
+    -webkit-transform: translateY(-160px);
+            transform: translateY(-160px);
+  }
+  75% {
+    -webkit-transform: translateY(-240px);
+            transform: translateY(-240px);
+  }
+  100% {
+    -webkit-transform: translateY(-240px);
+            transform: translateY(-240px);
+  }
+}
+
+@keyframes slide {
+  25% {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  50% {
+    -webkit-transform: translateY(-160px);
+            transform: translateY(-160px);
+  }
+  75% {
+    -webkit-transform: translateY(-240px);
+            transform: translateY(-240px);
+  }
+  100% {
+    -webkit-transform: translateY(-240px);
+            transform: translateY(-240px);
+  }
+}
+
+.section {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+
+.about1 {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: 150px 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding: 0 40px;
+  position: relative;
+  clear: both;
+}
+
+.inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left {
+  width: 50%;
+  padding-right: 50px;
+}
+
+.image {
+  position: relative;
+}
+
+img {
+  min-width: 100%;
+  opacity: 0;
+}
+
+.main {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  -webkit-box-shadow: 0 0 40px rgba(39, 9, 9, 0.5);
+          box-shadow: 0 0 40px rgba(39, 9, 9, 0.5);
+}
+
+.right {
+  width: 50%;
+  padding-left: 50px;
+}
+
+.title {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+
+.btn {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.05);
+  text-transform: uppercase;
+  padding: 20px 26px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #333;
+  font-family: "Poppins";
+  letter-spacing: 0;
+  margin-bottom: 15px;
+}
+
+.title h3 {
+  font-weight: 800;
+  font-family: "Poppins";
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.right .text,
+.button {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+
+.text {
+  margin-bottom: 40px;
+  padding-top: 27px;
+}
+
+p {
+  font-family: "Roboto";
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  font-weight: 400;
+  background-color: #fff;
+  color: #767676;
+  overflow: hidden;
+}
+
+.button a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  display: inline-block;
+  padding: 13px 48px;
+  border: 2px solid #000;
+  font-family: "Poppins";
+  -webkit-transition: all 0.5s cubic-bezier(0, 0, 0.1, 1);
+  transition: all 0.5s cubic-bezier(0, 0, 0.1, 1);
+  cursor: pointer !important;
+}
+
+.scrolling-active {
+  background-color: #000;
+  -webkit-box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 10px 0;
+}
+/*# sourceMappingURL=background.css.map */

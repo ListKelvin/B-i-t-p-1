@@ -1,0 +1,256 @@
+/* background */
+.background {
+  height: 100vh;
+
+  // background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  position: relative;
+  background-image: url(../Image/50.jpg);
+  .wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    background-color: transparent;
+
+    transform: translateX(200px);
+
+    color: white;
+    > * {
+      width: 700px;
+    }
+    &__name {
+      font-size: 30px;
+      color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #fff;
+    }
+    &__skill {
+      ul {
+        list-style: none;
+        height: 80px;
+        overflow: hidden;
+        li {
+          font-size: 40px;
+          font-weight: 900;
+          line-height: 80px;
+          animation-name: slide;
+          animation-duration: 6s;
+          animation-iteration-count: infinite;
+          // animation-direction: alternate;
+        }
+      }
+    }
+    &__from {
+      font-weight: 500;
+      font-size: 30px;
+    }
+    &__button {
+      margin-top: 20px;
+      display: flex;
+      a {
+        margin: 0 15px;
+        border: 2px solid #fff;
+        padding: 20px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 23px;
+        border-radius: 50px;
+        width: 63px;
+        height: 63px;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        transition: all 0.5s;
+
+        i {
+          margin-right: 22px;
+        }
+        &:hover {
+          width: 250px;
+          background-color: #fff;
+          color: #15a2fa;
+          border-color: #15a2fa;
+        }
+        span {
+          min-width: 200px;
+          display: block;
+        }
+        &:nth-child(2):hover {
+          width: 400px;
+        }
+        &:nth-child(2) {
+          width: 65px;
+          height: 65px;
+        }
+        &:last-child:hover {
+          width: 250px;
+        }
+        &:last-child {
+          width: 65px;
+          height: 65px;
+        }
+      }
+    }
+  }
+}
+body {
+  overflow-x: hidden;
+}
+
+header {
+  z-index: 999;
+}
+
+@keyframes slide {
+  25% {
+    transform: translateY(-80px);
+  }
+  50% {
+    transform: translateY(-160px);
+  }
+  75% {
+    transform: translateY(-240px);
+  }
+  100% {
+    transform: translateY(-240px);
+  }
+}
+
+// about me
+.section {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+.about1 {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: 150px 0;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding: 0 40px;
+  position: relative;
+  clear: both;
+}
+//style thẻ chứa hình và content
+.inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  display: flex;
+  align-items: center;
+}
+//style hình
+.left {
+  width: 50%;
+  padding-right: 50px;
+}
+.image {
+  position: relative;
+}
+img {
+  min-width: 100%;
+  opacity: 0;
+}
+.main {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  box-shadow: 0 0 40px rgba(39, 9, 9, 0.5);
+}
+//style content
+.right {
+  width: 50%;
+  padding-left: 50px;
+}
+.title {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+.btn {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.05);
+  text-transform: uppercase;
+  padding: 20px 26px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #333;
+  font-family: "Poppins";
+  letter-spacing: 0;
+  margin-bottom: 15px;
+}
+.title h3 {
+  font-weight: 800;
+  font-family: "Poppins";
+}
+
+h3 {
+  font-size: 30px;
+}
+.right .text,
+.button {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+.text {
+  margin-bottom: 40px;
+  padding-top: 27px;
+}
+p {
+  font-family: "Roboto";
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  font-weight: 400;
+  background-color: #fff;
+  color: #767676;
+  overflow: hidden;
+}
+
+// button
+.button a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  display: inline-block;
+  padding: 13px 48px;
+  border: 2px solid #000;
+  font-family: "Poppins";
+  transition: all 0.5s cubic-bezier(0, 0, 0.1, 1);
+  cursor: pointer !important;
+}
+//apply style after scroll
+.scrolling-active {
+  background-color: #000;
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+  padding: 10px 0;
+}
+// apply style after scroll end
